@@ -1,0 +1,360 @@
+.custom-dots {
+  position: absolute;
+  bottom: 20px !important;
+  left: 50% !important;
+  transform: translateX(-50%);
+  display: flex !important;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: white !important;
+}
+
+.slick-dots li button:before {
+  font-family: 'slick';
+  font-size: 10px !important;
+  line-height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px !important;
+  height: 20px !important;
+  content: '•';
+  text-align: center;
+  opacity: 0.25;
+  color: white !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* .custom-dots li {
+  margin: 0 4px;
+} */
+
+/* .custom-dots li button {
+  width: 8px !important;
+  height: 8px !important;
+  border-radius: 100% !important;
+  background:#fff !important;
+  border: none !important;
+  padding: 0;
+  font-size: 0;
+  transition: all 0.3s ease;
+  &:before {
+    content: none;
+  }
+} */
+
+/* .custom-dots li.slick-active button {
+  width: 24px;
+  height: 8px;
+  border-radius: 100px !important;
+  background: white;
+  &:before {
+    content: none;
+  }
+} */
+
+/* .slider-container {
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  padding: 0px;
+} */
+
+/* .slick-slide {
+  padding: 0 10px;
+} */
+
+.slick-prev,
+.slick-next {
+  z-index: 1;
+}
+
+.slick-dots {
+  position: relative; /* To place it correctly below the main slider */
+  margin-top: 15px; /* Spacing between slider and thumbnails */
+}
+.slick-dots li {
+  margin: 0 5px; /* Spacing between thumbnail items */
+}
+.slick-dots li button:before {
+  font-size: 0; /* Remove default dots */
+}
+.slick-dots .slick-thumb img {
+  border-radius: 8px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+/* calendar */
+.react-calendar {
+  width: 100% !important;
+  height: auto !important;
+  border: none;
+  border-radius: 20px;
+  padding: 1em;
+  background: #f0f0f099 !important;
+  box-shadow: 0px 0px 10px 0px #00000033;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.react-calendar__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+}
+
+.react-calendar__navigation button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.react-calendar__month-view__weekdays {
+  text-align: center;
+  font-weight: normal;
+  padding-bottom: 0.5em;
+  text-decoration: none;
+  color: #1e1e1e;
+  font-size: 18px;
+}
+
+.react-calendar__tile {
+  border: none;
+  border-radius: 4px;
+  padding: 0.5em;
+  margin: 0.3em;
+  text-align: center;
+  cursor: pointer;
+  background-color: none;
+}
+
+.react-calendar__tile--now {
+  background: #004aad;
+  color: white;
+}
+
+.react-calendar__tile--active {
+  background: #e7906b !important;
+  color: white !important;
+}
+
+.react-calendar__tile--disabled {
+  background: #e0e0e0;
+  color: #a0a0a0;
+  cursor: not-allowed;
+}
+
+.react-calendar__tile:disabled {
+  background: none;
+  color: #21242933;
+  cursor: not-allowed;
+}
+
+.react-calendar__navigation__arrow {
+  flex-grow: 0.333;
+}
+
+.react-calendar__month-view__days {
+  display: grid !important;
+  grid-template-columns: 14.2% 14.2% 14.2% 14.2% 14.2% 14.2% 14.2%;
+
+  .react-calendar__tile {
+    max-width: initial !important;
+  }
+}
+
+/* google places autocomplete */
+
+.google-places-autocomplete {
+  width: 100%;
+}
+
+/* Style for the autocomplete dropdown */
+.pac-container {
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 2px;
+  z-index: 9999;
+}
+
+.pac-item {
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.pac-item:hover {
+  background-color: #f7fafc;
+}
+
+.pac-item-query {
+  font-size: 14px;
+  color: #212429;
+}
+
+.pac-matched {
+  font-weight: 600;
+}
+
+/* stepper */
+.stepper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  flex: 1;
+}
+
+.indicator {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  z-index: 2;
+  font-size: 12px;
+  font-weight: 500;
+  box-shadow:
+    0 0 0 4px rgba(229, 235, 252, 1),
+    0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.red {
+  background-color: #e92f2f;
+}
+.orange {
+  background: linear-gradient(to right, #e92f2f, #ff800f);
+}
+.orange-dark {
+  background-color: #ff800f;
+}
+
+.line {
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  top: 18px;
+  left: 50%;
+  z-index: 1;
+  box-shadow:
+    0 0 0 3px rgba(229, 235, 252, 1),
+    0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.red-orange {
+  background: linear-gradient(to right, #e92f2f, #ff800f);
+}
+
+.orange {
+  background: linear-gradient(to right, #e92f2f, #ff800f);
+}
+
+.description {
+  margin-top: 8px;
+  font-size: 10px;
+  color: #212429;
+  font-weight: 500;
+}
+
+.step:last-child .line {
+  display: none;
+}
+
+/* Custom arrow styles */
+.team-slider-container .slick-prev,
+.team-slider-container .slick-next {
+  width: 40px;
+  height: 40px;
+  background: #b5b5b5;
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.team-slider-container .slick-prev {
+  left: -20px;
+}
+
+.team-slider-container .slick-next {
+  right: -20px;
+}
+
+/* Arrow icons */
+.team-slider-container .slick-prev:before,
+.team-slider-container .slick-next:before {
+  font-size: 20px;
+  color: #ffffff; /* Your theme color */
+  opacity: 1;
+}
+
+/* Adjust container padding */
+.team-slider-container {
+  padding: 40px 30px;
+}
+
+/* Center slide styling */
+.team-slider-container .slick-slide {
+  transition: all 0.3s ease;
+  transform: scale(0.85);
+  opacity: 0.5;
+  padding: 0 20px;
+}
+
+.team-slider-container .slick-center {
+  transform: scale(1.1);
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .team-slider-container .slick-prev {
+    left: 0;
+  }
+
+  .team-slider-container .slick-next {
+    right: 0;
+  }
+
+  .team-slider-container {
+    padding: 40px 15px;
+  }
+
+  .team-slider-container .slick-slide {
+    padding: 0 10px;
+  }
+}
+
+/* Ensure smooth transitions */
+.team-slider-container .slick-track {
+  display: flex;
+  align-items: center;
+  padding: 50px 0;
+}
+
+/* Fix for arrow button focus outline */
+.team-slider-container .slick-prev:focus,
+.team-slider-container .slick-next:focus {
+  background: #b5b5b5;
+}

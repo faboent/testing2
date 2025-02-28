@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://nextarter-chakra.sznm.dev
+
+# Sitemaps
+Sitemap: https://nextarter-chakra.sznm.dev/sitemap.xml
